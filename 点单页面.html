@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./点单页面.css" />
+    <title>点单页面</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="background">
+            <div class="left-part">
+                <div class="logo"></div>
+                <div class="option">
+                    <div class="dish" onclick="mdish()">
+                        <div class="dish-logo"></div>
+                        <div class="dish-text">菜品</div>
+                    </div>
+                    <div class="table" onclick="mtable()">
+                        <div class="table-logo"></div>
+                        <div class="table-text">桌号</div>
+                    </div>
+                    <div class="settle" onclick="msettle()">
+                        <div class="settle-logo"></div>
+                        <div class="settle-text">预定</div>
+                    </div>
+                    <div class="history" onclick="mhistory()">
+                        <div class="history-logo"></div>
+                        <div class="history-text">历史</div>
+                    </div>
+                </div>
+                <a class="set" href="设置.html" target=_blank></a>
+            </div>
+            <div class="right-part">
+                <ul class="top-menu">
+                    <li class="list1" onclick="mhot()">
+                        <div class="ui-h"></div>
+                        <div class="hot">热菜</div>
+                    </li>
+                    <li class="list2" onclick="mcold()">
+                        <div class="ui-c"></div>
+                        <div class="cold">冷食</div>
+                    </li>
+                    <li class="list3" onclick="msoop()">
+                        <div class="ui-s"></div>
+                        <div class="soop">汤品</div>
+                    </li>
+                    <li class="list4" onclick="mdrink()">
+                        <div class="ui-d"></div>
+                        <div class="drink">饮品</div>
+                    </li>
+                </ul>
+                <ul class="menu-hot">
+                    <li class="block">
+                        <img class="picture" src="./u=3660796065,1031361573&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="A01">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=364055337,609376702&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="A02">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=2024806174,2931674895&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="A03">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=4106932450,4240024649&fm=26&gp=0 (1).jpg" />
+                        <div class="text">
+                            <div class="name" id="A04">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=3734690648,1007523942&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="A05">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=3660796065,1031361573&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="A06">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=364055337,609376702&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="A07">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=2024806174,2931674895&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="A08">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=2024806174,2931674895&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="A09">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="menu-cold">
+                    <li class="block">
+                        <img class="picture" src="./u=3660796065,1031361573&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="B01">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=364055337,609376702&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="B02">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=2024806174,2931674895&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="B03">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=4106932450,4240024649&fm=26&gp=0 (1).jpg" />
+                        <div class="text">
+                            <div class="name" id="B04">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=3734690648,1007523942&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="B05">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=3660796065,1031361573&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="B06">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="menu-soop">
+                    <li class="block">
+                        <img class="picture" src="./u=3660796065,1031361573&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="C01">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=364055337,609376702&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="C02">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=2024806174,2931674895&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="C03">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=4106932450,4240024649&fm=26&gp=0 (1).jpg" />
+                        <div class="text">
+                            <div class="name" id="C04">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=3734690648,1007523942&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="C05">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=3660796065,1031361573&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="C06">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=364055337,609376702&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="C07">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="menu-drink">
+                    <li class="block">
+                        <img class="picture" src="./u=3660796065,1031361573&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="D01">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=364055337,609376702&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="D02">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=2024806174,2931674895&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="D03">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=4106932450,4240024649&fm=26&gp=0 (1).jpg" />
+                        <div class="text">
+                            <div class="name" id="D04">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=3734690648,1007523942&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="D05">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=3660796065,1031361573&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="D06">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=364055337,609376702&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="D07">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="block">
+                        <img class="picture" src="./u=2024806174,2931674895&fm=26&gp=0.jpg" />
+                        <div class="text">
+                            <div class="name" id="D08">手鞠寿司</div>
+                            <div class="cost">RMB
+                                <div class="price">40</div>
+                                /份
+                            </div>
+                            <div class="choose">
+                                <div class="bottom2"></div>
+                                <div class="number">0</div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="settle-menu">
+                    <div class="value">40元
+                        <div class="jiesuan" onclick="send()">预定</div>
+                    </div>
+
+                    <li class="item">
+                        <img class="picture2" src="./u=2024806174,2931674895&fm=26&gp=0.jpg" />
+                        <div class="settle-text">
+                            <div class="settle-name">手鞠寿司</div>
+                            <div class="settle-cost">RMB
+                                <div class="settle-price">40</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="table-menu">
+                    <li class="table-num" value="0">1</li>
+                    <li class="table-num" value="0">2</li>
+                    <li class="table-num" value="0">3</li>
+                    <li class="table-num" value="0">4</li>
+                    <li class="table-num" value="0">5</li>
+                    <li class="table-num" value="0">6</li>
+                    <li class="table-num" value="0">7</li>
+                    <li class="table-num" value="0">8</li>
+                    <li class="table-num" value="0">9</li>
+                    <li class="table-num" value="0">10</li>
+                    <li class="table-num" value="0">11</li>
+                    <li class="table-num" value="0">12</li>
+                    <li class="table-num" value="0">13</li>
+                    <li class="table-num" value="0">14</li>
+                    <li class="table-num" value="0">15</li>
+                    <li class="table-num" value="0">16</li>
+                    <li class="table-num" value="0">17</li>
+                    <li class="table-num" value="0">18</li>
+                    <li class="table-num" value="0">19</li>
+                    <li class="table-num" value="0">20</li>
+                </ul>
+                <ul class="history-menu">
+                    <li class="history-list">
+                        <div class="order">订单编号：
+                            <div class="order-number">001</div>
+                        </div>
+                        <div class="time"></div>
+                        <div class="food">食物列表：
+                            <ul class="food-list">
+                                <li class="food-name">手鞠寿司
+                                    <div class="food-cost">40</div>
+                                </li>
+                                <li class="food-name">手鞠寿司
+                                    <div class="food-cost">40</div>
+                                </li>
+                                <li class="food-name">手鞠寿司
+                                    <div class="food-cost">40</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="order-cost">消费金额：
+                            <div class="cost-money">120</div>
+                        </div>
+                    </li>
+                    <li class="history-list">
+                        <div class="order">订单编号：
+                            <div class="order-number">001</div>
+                        </div>
+                        <div class="time"></div>
+                        <div class="food">食物列表：
+                            <ul class="food-list">
+                                <li class="food-name">手鞠寿司
+                                    <div class="food-cost">40</div>
+                                </li>
+                                <li class="food-name">手鞠寿司
+                                    <div class="food-cost">40</div>
+                                </li>
+                                <li class="food-name">手鞠寿司
+                                    <div class="food-cost">40</div>
+                                </li>
+                                <li class="food-name">手鞠寿司
+                                    <div class="food-cost">40</div>
+                                </li>
+                                <li class="food-name">手鞠寿司
+                                    <div class="food-cost">40</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="order-cost">消费金额：
+                            <div class="cost-money">120</div>
+                        </div>
+                    </li>
+                    <li class="history-list">
+                        <div class="order">订单编号：
+                            <div class="order-number">001</div>
+                        </div>
+                        <div class="time"></div>
+                        <div class="food">食物列表：
+                            <ul class="food-list">
+                                <li class="food-name">手鞠寿司
+                                    <div class="food-cost">40</div>
+                                </li>
+                                <li class="food-name">手鞠寿司
+                                    <div class="food-cost">40</div>
+                                </li>
+                                <li class="food-name">手鞠寿司
+                                    <div class="food-cost">40</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="order-cost">消费金额：
+                            <div class="cost-money">120</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var dish = document.getElementsByClassName('dish')[0];
+        var settle = document.getElementsByClassName('settle')[0];
+        var table = document.getElementsByClassName('table')[0];
+        var history1 = document.getElementsByClassName('history')[0];
+        var hot = document.getElementsByClassName('menu-hot')[0];
+        var cold = document.getElementsByClassName('menu-cold')[0];
+        var soop = document.getElementsByClassName('menu-soop')[0];
+        var drink = document.getElementsByClassName('menu-drink')[0];
+        var settlemenu = document.getElementsByClassName('settle-menu')[0];
+        var tablemenu = document.getElementsByClassName('table-menu')[0];
+        var historymenu = document.getElementsByClassName('history-menu')[0];
+        var hotname = document.getElementsByClassName('hot')[0];
+        var coldname = document.getElementsByClassName('cold')[0];
+        var soopname = document.getElementsByClassName('soop')[0];
+        var drinkname = document.getElementsByClassName('drink')[0];
+        var tablenum = document.getElementsByClassName('table-num');
+        var dishprice = document.getElementsByClassName('price');
+        function mdish() {
+
+            dish.style = "background-color:rgb(42, 42, 42,.5);"
+            settle.style = "background-color:rgb(42, 42, 42,.0);"
+            history1.style = "background-color:rgb(42, 42, 42,.0)"
+            table.style = "background-color:rgb(42, 42, 42,.0)"
+            historymenu.style.display = "none";
+            tablemenu.style.display = "none";
+            hot.style.display = "block";
+            settlemenu.style.display = "none";
+            hotname.style.color = "#ffa000";
+
+            var xmlhttp;
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var mes = JSON.parese(xmlhttp.responseText) 
+                    console.log(mes)
+                    for(let i = 0;i < mes.dishname.length ;i ++)
+                    {
+
+                        var newblock = document.createElement('li');
+                        newblock.className = 'block';
+                        hot.insertBefore(newblock,hot.childNodes[i]);
+
+                        var newimg = document.createElement('img');
+                        newimg.src = mes.imgurl;
+                        newblock.insertBefore(newimg,newblock.childNodes[0]);
+
+                        var newtdiv = document.createElement('div');
+                        newtdiv.className = 'text';
+                        newblock.insertBefore(newtdiv,newblock.childNodes[1]);
+
+                        var newndiv = document.createElement('div');
+                        newndiv.className = 'name';
+                        newndiv.id = mes.foodid[i];
+                        newndiv.innerHTML = mes.foodname[i];
+                        newtdiv.insertBefore(newndiv,newtdiv.childNodes[0]);
+
+                        var newcdiv = document.createElement('div');
+                        newcdiv.className = 'cost';
+                        newtdiv.insertBefore(newcdiv,newtdiv.childNodes[1]);
+
+                        var newtextnode = document.createTextNode("RMB");
+                        newcdiv.appendChild(newtextnode);
+
+                        var newpdiv = document.createElement('div');
+                        newpdiv.className = 'price';
+                        newpdiv.innerHTML = mes.foodprice[i];
+                        newcdiv.insertBefore(newpdiv,newcdiv.childNodes[1]);
+
+                        var newtextnode2 = document.createTextNode("/份");
+                        newcdiv.insertBefore(newtextnode2,newcdiv.childNodes[2]);
+
+                        var newchdiv = document.createElement('div');
+                        newchdiv.className = 'choose';
+                        newtdiv.insertBefore(newchdiv,newcdiv.childNodes[2]);
+
+                        var newbdiv = document.createElement('div');
+                        newbdiv.className = 'bottom2';
+                        newchdiv.insertBefore(newbdiv,newchdiv.childNodes[0]);
+
+                        var newnudiv = document.createElement('div');
+                        newnudiv.className = 'number';
+                        newnudiv.innerHTML = '0';
+                        newchdiv.insertBefore(newnudiv,newchdiv.childNodes[1]);
+
+                        var newb2div = document.createElement('div');
+                        newb2div.className = 'bottom';
+                        newchdiv.insertBefore(newb2div,newchdiv.childNodes[2]);
+                        
+                    }
+                }else{
+                    alert('网络错误 请重试！')
+                }
+            }
+            xmlhttp.open("POST", "qiantai.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("list1");
+        }
+        
+        function msettle() {
+            settle.style = "background-color:rgb(42, 42, 42,.5);"
+            history1.style = "background-color:rgb(42, 42, 42,.0)"
+            dish.style = "background-color:rgb(42, 42, 42,.0)"
+            table.style = "background-color:rgb(42, 42, 42,.0)"
+            settlemenu.style.display = "block";
+            tablemenu.style.display = "none";
+            historymenu.style.display = "none";
+            hot.style.display = "none";
+            hotname.style.color = "#bfbfbf";
+            cold.style.display = "none";
+            coldname.style.color = "#bfbfbf";
+            soop.style.display = "none";
+            soopname.style.color = "#bfbfbf";
+            drink.style.display = "none";
+            drinkname.style.color = "#bfbfbf";
+
+            var img = document.getElementsByClassName('picture2');
+            var settlename = document.getElementsByClassName('settle-name');
+            var settleprice = document.getElementsByClassName('settle-price');
+            var num = document.getElementsByClassName('number');
+            for(let i = 0;i < num.length;i ++)
+            {
+                if(num[i].innerHTML != 0)
+                {
+                    var newitem = document.createElement('li');
+                    newitem.className = 'item';
+                    settlemenu.insertBefore(newitem,settlemenu.childNodes[i + 1]);
+
+                    var newimg2 = document.createElement('img');
+                    newimg2.class = 'picture2';
+                    // newimg2.src = img[i].src;
+                    newitem.insertBefore(newimg2,newitem.childNodes[0]);
+
+                    var newsettletext = document.createElement('div');
+                    newsettletext.className = 'settle-text';
+                    newitem.insertBefore(newsettletext,newitem.childNodes[1]);
+
+                    var newsettlename = document.createElement('div');
+                    newsettlename.className = 'settle-name';
+                    newsettlename.innerHTML = settlename[i].innerHTML
+                    newsettletext.insertBefore(newsettlename,newsettletext.childNodes[0]);
+
+                    var newsettlecost = document.createElement('div');
+                    newsettlecost.className = 'settle-cost';
+                    newsettlecost.innerHTML = "RMB";
+                    newsettletext.insertBefore(newsettlecost,newsettletext.childNodes[1]);
+
+                    var newsettleprice = document.createElement('div');
+                    newsettleprice.className = 'settle-price';
+                    newsettleprice.innerHTML = settleprice[i];
+                    newsettlecost.insertBefore(newsettleprice,newsettlecost.childNodes[0]);
+                }
+            }
+
+
+
+
+
+
+        }
+        function mtable() {
+            table.style = "background-color:rgb(42, 42, 42,.5);"
+            dish.style = "background-color:rgb(42, 42, 42,.0)"
+            settle.style = "background-color:rgb(42, 42, 42,.0)"
+            history1.style = "background-color:rgb(42, 42, 42,.0)"
+            tablemenu.style.display = "block";
+            settlemenu.style.display = "none";
+            historymenu.style.display = "none";
+            hot.style.display = "none";
+            hotname.style.color = "#bfbfbf";
+            cold.style.display = "none";
+            coldname.style.color = "#bfbfbf";
+            soop.style.display = "none";
+            soopname.style.color = "#bfbfbf";
+            drink.style.display = "none";
+            drinkname.style.color = "#bfbfbf";
+        }
+        function mhistory() {
+            history1.style = "background-color:rgb(42, 42, 42,.5);"
+            dish.style = "background-color:rgb(42, 42, 42,.0)"
+            settle.style = "background-color:rgb(42, 42, 42,.0)"
+            table.style = "background-color:rgb(42, 42, 42,.0)"
+            historymenu.style.display = "block";
+            settlemenu.style.display = "none";
+            tablemenu.style.display = "none";
+            hot.style.display = "none";
+            hotname.style.color = "#bfbfbf";
+            cold.style.display = "none";
+            coldname.style.color = "#bfbfbf";
+            soop.style.display = "none";
+            soopname.style.color = "#bfbfbf";
+            drink.style.display = "none";
+            drinkname.style.color = "#bfbfbf";
+
+
+
+
+            var xmlhttp;
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var history_mes = JSON.parese(xmlhttp.responseText) 
+                    
+
+                    for(let i = 0;i < history_mes.ordernumber.lengt;i ++)
+                    {
+                        var newhistorylist = document.createElement('li');
+                        newhistorylist.className = 'history-list';
+                        historymenu.insertBefore(newhistorylist,historymenu.childNodes[i]);
+
+                        var neworder = document.createElement('div');
+                        neworder.className = 'order';
+                        newhistorylist.insertBefore(neworder,newhistorylist.childNodes[0]);
+
+                        var newtextnode3 = document.createTextNode("订单编号：");
+                        neworder.insertBefore(newtextnode3,neworder.childNodes[0]);
+
+                        var neworder_number = document.createElement('div');
+                        neworder_number.className = 'order-number';
+                        neworder_number.innerHTML = i;
+
+                        var newtime = document.createElement('div');
+                        newtime.className = 'time';
+                        newtime.innerHTML = 
+                        newhistorylist.insertBefore(newtime,newhistorylist.childNodes[1]);
+
+                        var newfood = document.createElement('div');
+                        newfood.className = 'food';
+                        newhistorylist.insertBefore(newfood,newhistorylist.childNodes[2]);
+
+                        var newtextnode4 = document.createTextNode("食物列表:");
+                        newfood.insertBefore(newtextnode4,newfood.childNodes[0]);
+
+                        var newfoodlist = document.createElement('ul');
+                        newfoodlist.className = 'food-list';
+                        newfood.insertBefore(newfoodlist,newfood.childNodes[1]);
+
+                        for(let j = 0;j < history_mes.history_food_list_name.length;j ++)
+                        {
+                            var newfoodname = document.createElement('li');
+                            newfoodname.className = 'food-list';
+                            newfoodname.innerHTML = history_mes.history_food_list_name[i];
+                            newfoodlist.insertBefore(newfoodname,newfoodlist.childNodes[i]);
+
+                            var newcost = document.createElement('div');
+                            newcost.className = 'foodcost';
+                            newcost.innerHTML = history_mes.history_food_list_price[i];
+                            newfoodname.insertBefore(newcost,newfoodname.childNodes[0]);
+                        }
+
+                        var neworder_cost = document.createElement('div');
+                        neworder_cost.className = 'order-cost';
+                        neworder_cost.innerHTML = "消费金额："
+                        newhistorylist.insertBefore(neworder_cost,newhistorylist[3]);
+
+                        var newcostmoney = document.createElement('div');
+                        newcostmoney.className = 'cost-money';
+                        newcostmoney.innerHTML = history_mes.cost_money[i];
+                        neworder_cost.insertBefore(newcostmoney,neworder_cost.childNodes[0]);
+                    }
+                }else{
+                    alert('网络错误 请重试！')
+                }
+            }
+            xmlhttp.open("POST", "qiantai.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("list2");
+
+
+        }
+
+
+        window.onload = function () {
+            var add = document.getElementsByClassName('bottom');
+            var less = document.getElementsByClassName('bottom2');
+            var num = document.getElementsByClassName('number');
+
+
+            for (let i = 0; i < add.length; i++) {
+                add[i].onclick = function () {
+
+                    less[i].style = "background: url(./ui/减号-.png);background-size : 100% 100%;";
+
+                    num[i].innerHTML++;
+                }
+                less[i].onclick = function () {
+                    if (num[i].innerHTML == 1) {
+                        less[i].style = "background : url(./ui/减号.png); background-size : 100% 100%;"
+                        num[i].innerHTML--;
+                    }
+                    if (num[i].innerHTML > 0 && num[i].innerHTML != 1) {
+                        num[i].innerHTML--;
+                    }
+                }
+            }
+            var key = 0;
+
+            for (let i = 0; i < tablenum.length; i++) {
+                tablenum[i].onclick = function () {
+
+                    if (tablenum[i].value == 0) {
+                        tablenum[i].style = "background:#ffa000";
+                        tablenum[i].value = 1;
+                        
+                    }
+                    if (tablenum[i].value == 1 && key%2 == 1) {
+                        tablenum[i].style = "background:antiquewhite";
+                        tablenum[i].value = 0;
+                        
+                    }
+                    key++;
+                }
+            }
+        }
+
+        function mhot() {
+            dish.style = "background-color:rgb(42, 42, 42,.5);"
+            settle.style = "background-color:rgb(42, 42, 42,.0);"
+            table.style = "background-color:rgb(42, 42, 42,.0);"
+            history1.style = "background-color:rgb(42, 42, 42,.0);"
+            hot.style.display = "block";
+            tablemenu.style.display = "none";
+            historymenu.style.display = "none";
+            hotname.style.color = "#ffa000";
+            cold.style.display = "none";
+            coldname.style.color = "#bfbfbf";
+            soop.style.display = "none";
+            soopname.style.color = "#bfbfbf";
+            drink.style.display = "none";
+            drinkname.style.color = "#bfbfbf";
+            settlemenu.style.display = "none";
+            var xmlhttp;
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var mes = JSON.parese(xmlhttp.responseText) 
+                    console.log(mes)
+                    for(let i = 0;i < mes.dishname.length ;i ++)
+                    {
+
+                        var newblock = document.createElement('li');
+                        newblock.className = 'block';
+                        hot.insertBefore(newblock,hot.childNodes[i]);
+
+                        var newimg = document.createElement('img');
+                        newimg.src = mes.imgurl;
+                        newblock.insertBefore(newimg,newblock.childNodes[0]);
+
+                        var newtdiv = document.createElement('div');
+                        newtdiv.className = 'text';
+                        newblock.insertBefore(newtdiv,newblock.childNodes[1]);
+
+                        var newndiv = document.createElement('div');
+                        newndiv.className = 'name';
+                        newndiv.id = mes.foodid[i];
+                        newndiv.innerHTML = mes.foodname[i];
+                        newtdiv.insertBefore(newndiv,newtdiv.childNodes[0]);
+
+                        var newcdiv = document.createElement('div');
+                        newcdiv.className = 'cost';
+                        newtdiv.insertBefore(newcdiv,newtdiv.childNodes[1]);
+
+                        var newtextnode = document.createTextNode("RMB");
+                        newcdiv.appendChild(newtextnode);
+
+                        var newpdiv = document.createElement('div');
+                        newpdiv.className = 'price';
+                        newpdiv.innerHTML = mes.foodprice[i];
+                        newcdiv.insertBefore(newpdiv,newcdiv.childNodes[1]);
+
+                        var newtextnode2 = document.createTextNode("/份");
+                        newcdiv.insertBefore(newtextnode2,newcdiv.childNodes[2]);
+
+                        var newchdiv = document.createElement('div');
+                        newchdiv.className = 'choose';
+                        newtdiv.insertBefore(newchdiv,newcdiv.childNodes[2]);
+
+                        var newbdiv = document.createElement('div');
+                        newbdiv.className = 'bottom2';
+                        newchdiv.insertBefore(newbdiv,newchdiv.childNodes[0]);
+
+                        var newnudiv = document.createElement('div');
+                        newnudiv.className = 'number';
+                        newnudiv.innerHTML = '0';
+                        newchdiv.insertBefore(newnudiv,newchdiv.childNodes[1]);
+
+                        var newb2div = document.createElement('div');
+                        newb2div.className = 'bottom';
+                        newchdiv.insertBefore(newb2div,newchdiv.childNodes[2]);
+                        
+                    }
+                }else{
+                    alert('网络错误 请重试！')
+                }
+            }
+            xmlhttp.open("POST", "qiantai.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("hot");
+        }
+        function mcold() {
+            dish.style = "background-color:rgb(42, 42, 42,.5);"
+            settle.style = "background-color:rgb(42, 42, 42,.0);"
+            table.style = "background-color:rgb(42, 42, 42,.0);"
+            history1.style = "background-color:rgb(42, 42, 42,.0);"
+            cold.style.display = "block";
+            tablemenu.style.display = "none";
+            historymenu.style.display = "none";
+            coldname.style.color = '#ffa000';
+            hot.style.display = "none";
+            hotname.style.color = "#bfbfbf";
+            soop.style.display = "none";
+            soopname.style.color = "#bfbfbf";
+            drink.style.display = "none";
+            drinkname.style.color = "#bfbfbf";
+            settlemenu.style.display = "none";
+            hotname.style.color = "#bfbfbf";
+            var xmlhttp;
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var mes = JSON.parese(xmlhttp.responseText) 
+                    console.log(mes)
+                    for(let i = 0;i < mes.dishname.length ;i ++)
+                    {
+
+                        var newblock = document.createElement('li');
+                        newblock.className = 'block';
+                        hot.insertBefore(newblock,hot.childNodes[i]);
+
+                        var newimg = document.createElement('img');
+                        newimg.src = mes.imgurl;
+                        newblock.insertBefore(newimg,newblock.childNodes[0]);
+
+                        var newtdiv = document.createElement('div');
+                        newtdiv.className = 'text';
+                        newblock.insertBefore(newtdiv,newblock.childNodes[1]);
+
+                        var newndiv = document.createElement('div');
+                        newndiv.className = 'name';
+                        newndiv.id = mes.foodid[i];
+                        newndiv.innerHTML = mes.foodname[i];
+                        newtdiv.insertBefore(newndiv,newtdiv.childNodes[0]);
+
+                        var newcdiv = document.createElement('div');
+                        newcdiv.className = 'cost';
+                        newtdiv.insertBefore(newcdiv,newtdiv.childNodes[1]);
+
+                        var newtextnode = document.createTextNode("RMB");
+                        newcdiv.appendChild(newtextnode);
+
+                        var newpdiv = document.createElement('div');
+                        newpdiv.className = 'price';
+                        newpdiv.innerHTML = mes.foodprice[i];
+                        newcdiv.insertBefore(newpdiv,newcdiv.childNodes[1]);
+
+                        var newtextnode2 = document.createTextNode("/份");
+                        newcdiv.insertBefore(newtextnode2,newcdiv.childNodes[2]);
+
+                        var newchdiv = document.createElement('div');
+                        newchdiv.className = 'choose';
+                        newtdiv.insertBefore(newchdiv,newcdiv.childNodes[2]);
+
+                        var newbdiv = document.createElement('div');
+                        newbdiv.className = 'bottom2';
+                        newchdiv.insertBefore(newbdiv,newchdiv.childNodes[0]);
+
+                        var newnudiv = document.createElement('div');
+                        newnudiv.className = 'number';
+                        newnudiv.innerHTML = '0';
+                        newchdiv.insertBefore(newnudiv,newchdiv.childNodes[1]);
+
+                        var newb2div = document.createElement('div');
+                        newb2div.className = 'bottom';
+                        newchdiv.insertBefore(newb2div,newchdiv.childNodes[2]);
+                        
+                    }
+                }else{
+                    alert('网络错误 请重试！')
+                }
+            }
+            xmlhttp.open("POST", "qiantai.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("cold");
+        }
+        function msoop() {
+            dish.style = "background-color:rgb(42, 42, 42,.5);"
+            settle.style = "background-color:rgb(42, 42, 42,.0);"
+            table.style = "background-color:rgb(42, 42, 42,.0);"
+            history1.style = "background-color:rgb(42, 42, 42,.0);"
+            soop.style.display = "block";
+            tablemenu.style.display = "none";
+            historymenu.style.display = "none";
+            soopname.style.color = "#ffa000";
+            cold.style.display = "none";
+            coldname.style.color = "#bfbfbf";
+            hot.style.display = "none";
+            hotname.style.color = "#bfbfbf";
+            drink.style.display = "none";
+            drinkname.style.color = "#bfbfbf";
+            settlemenu.style.display = "none";
+            hotname.style.color = "#bfbfbf";
+            var xmlhttp;
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var mes = JSON.parese(xmlhttp.responseText) 
+                    console.log(mes)
+                    for(let i = 0;i < mes.dishname.length ;i ++)
+                    {
+
+                        var newblock = document.createElement('li');
+                        newblock.className = 'block';
+                        hot.insertBefore(newblock,hot.childNodes[i]);
+
+                        var newimg = document.createElement('img');
+                        newimg.src = mes.imgurl;
+                        newblock.insertBefore(newimg,newblock.childNodes[0]);
+
+                        var newtdiv = document.createElement('div');
+                        newtdiv.className = 'text';
+                        newblock.insertBefore(newtdiv,newblock.childNodes[1]);
+
+                        var newndiv = document.createElement('div');
+                        newndiv.className = 'name';
+                        newndiv.id = mes.foodid[i];
+                        newndiv.innerHTML = mes.foodname[i];
+                        newtdiv.insertBefore(newndiv,newtdiv.childNodes[0]);
+
+                        var newcdiv = document.createElement('div');
+                        newcdiv.className = 'cost';
+                        newtdiv.insertBefore(newcdiv,newtdiv.childNodes[1]);
+
+                        var newtextnode = document.createTextNode("RMB");
+                        newcdiv.appendChild(newtextnode);
+
+                        var newpdiv = document.createElement('div');
+                        newpdiv.className = 'price';
+                        newpdiv.innerHTML = mes.foodprice[i];
+                        newcdiv.insertBefore(newpdiv,newcdiv.childNodes[1]);
+
+                        var newtextnode2 = document.createTextNode("/份");
+                        newcdiv.insertBefore(newtextnode2,newcdiv.childNodes[2]);
+
+                        var newchdiv = document.createElement('div');
+                        newchdiv.className = 'choose';
+                        newtdiv.insertBefore(newchdiv,newcdiv.childNodes[2]);
+
+                        var newbdiv = document.createElement('div');
+                        newbdiv.className = 'bottom2';
+                        newchdiv.insertBefore(newbdiv,newchdiv.childNodes[0]);
+
+                        var newnudiv = document.createElement('div');
+                        newnudiv.className = 'number';
+                        newnudiv.innerHTML = '0';
+                        newchdiv.insertBefore(newnudiv,newchdiv.childNodes[1]);
+
+                        var newb2div = document.createElement('div');
+                        newb2div.className = 'bottom';
+                        newchdiv.insertBefore(newb2div,newchdiv.childNodes[2]);
+                        
+                    }
+                }else{
+                    alert('网络错误 请重试！')
+                }
+            }
+            xmlhttp.open("POST", "qiantai.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("soop");
+        }
+        function mdrink() {
+            dish.style = "background-color:rgb(42, 42, 42,.5);"
+            settle.style = "background-color:rgb(42, 42, 42,.0);"
+            table.style = "background-color:rgb(42, 42, 42,.0);"
+            history1.style = "background-color:rgb(42, 42, 42,.0);"
+            drink.style.display = "block";
+            tablemenu.style.display = "none";
+            historymenu.style.display = "none";
+            drinkname.style.color = "#ffa000";
+            cold.style.display = "none";
+            coldname.style.color = "#bfbfbf";
+            soop.style.display = "none";
+            soopname.style.color = "#bfbfbf";
+            hot.style.display = "none";
+            hotname.style.color = "#bfbfbf";
+            settlemenu.style.display = "none";
+            hotname.style.color = "#bfbfbf";
+            var xmlhttp;
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var mes = JSON.parese(xmlhttp.responseText) 
+                    console.log(mes)
+                    for(let i = 0;i < mes.dishname.length ;i ++)
+                    {
+
+                        var newblock = document.createElement('li');
+                        newblock.className = 'block';
+                        hot.insertBefore(newblock,hot.childNodes[i]);
+
+                        var newimg = document.createElement('img');
+                        newimg.src = mes.imgurl;
+                        newblock.insertBefore(newimg,newblock.childNodes[0]);
+
+                        var newtdiv = document.createElement('div');
+                        newtdiv.className = 'text';
+                        newblock.insertBefore(newtdiv,newblock.childNodes[1]);
+
+                        var newndiv = document.createElement('div');
+                        newndiv.className = 'name';
+                        newndiv.id = mes.foodid[i];
+                        newndiv.innerHTML = mes.foodname[i];
+                        newtdiv.insertBefore(newndiv,newtdiv.childNodes[0]);
+
+                        var newcdiv = document.createElement('div');
+                        newcdiv.className = 'cost';
+                        newtdiv.insertBefore(newcdiv,newtdiv.childNodes[1]);
+
+                        var newtextnode = document.createTextNode("RMB");
+                        newcdiv.appendChild(newtextnode);
+
+                        var newpdiv = document.createElement('div');
+                        newpdiv.className = 'price';
+                        newpdiv.innerHTML = mes.foodprice[i];
+                        newcdiv.insertBefore(newpdiv,newcdiv.childNodes[1]);
+
+                        var newtextnode2 = document.createTextNode("/份");
+                        newcdiv.insertBefore(newtextnode2,newcdiv.childNodes[2]);
+
+                        var newchdiv = document.createElement('div');
+                        newchdiv.className = 'choose';
+                        newtdiv.insertBefore(newchdiv,newcdiv.childNodes[2]);
+
+                        var newbdiv = document.createElement('div');
+                        newbdiv.className = 'bottom2';
+                        newchdiv.insertBefore(newbdiv,newchdiv.childNodes[0]);
+
+                        var newnudiv = document.createElement('div');
+                        newnudiv.className = 'number';
+                        newnudiv.innerHTML = '0';
+                        newchdiv.insertBefore(newnudiv,newchdiv.childNodes[1]);
+
+                        var newb2div = document.createElement('div');
+                        newb2div.className = 'bottom';
+                        newchdiv.insertBefore(newb2div,newchdiv.childNodes[2]);
+                        
+                    }
+                }else{
+                    alert('网络错误 请重试！')
+                }
+            }
+            xmlhttp.open("POST", "qiantai.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("drink");
+        }
+        var arr1 = new Array();
+        var arr2 = new Array();
+        var all = document.getElementsByClassName('name');
+        var allf = document.getElementsByClassName('number');
+        var method = {
+            dishname: arr1,
+            dishnum: arr2,
+            tablenumber: 0,
+            totalprice: 0,
+            time : ""
+        };
+        var k = 0;
+
+        function send() {
+            for (let i = 0; i < all.length; i++) {
+                if (allf[i].innerHTML != 0) {
+                    method.dishname[k] = all[i].id;
+                    method.dishnum[k] = allf[i].innerHTML;
+                    k++;
+                    method.totalprice += allf[i].innerHTML * dishprice[i];
+                }
+            }
+            for (let i = 0; i < tablenum.length; i++) {
+                if (tablenum[i].value == 1) {
+                    tablenumber = tablenum[i].value;
+                }
+            }
+            var xmlhttp;
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var mes = JSON.parese(xmlhttp.responseText) 
+                    if(mes == 1)
+                    {
+                        alert("预定成功！");
+                        window.location.href = "reister.html";
+                    }
+                    else{
+                        alter("预定失败 请检查各项操作");
+                    }
+                }else{
+                    alert('网络错误 请重试！')
+                }
+            }
+            var time = new Date().toLocaleTimeString();
+            xmlhttp.open("POST", "qiantai.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("foodname"+ method.dishname + "&foodnum" + method.dishnum + "&tablenum" + method.tablenumber + "&totalprice" + method.totalprice + "&time" + time);
+
+        }
+
+
+        
+    </script>
+</body>
+
+</html>
